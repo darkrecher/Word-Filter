@@ -72,13 +72,13 @@ When the reward for this question is taken (wether I am the winner or not), the 
 
 ## input file ##
 
-71wo6gGX8uGWi7RGxJkmtfmVernSX41L3 HYyrdvrwbt4vj5*HouSe*z6Fa3SyC11PBaz
+71wo6gGX8uGWi7RGxJkmtfmVernSX41L3 HYyrdvrwbt4vj5HouSez6Fa3SyC11PBaz
 
-AHqt1AGMcZ8C*FActorY*zJxcxjaCpY BTrUVCssfi*HELLO*qmYw3K4owfFpuWiYzd
+AHqt1AGMcZ8CFActorYzJxcxjaCpY BTrUVCssfiHELLOqmYw3K4owfFpuWiYzd
 
-BTrUVCssfiqmYw*Beer*3K4owfFpuWiYzd aaa*HELLO*bbbbBeercccc
+BTrUVCssfiqmYwBeer3K4owfFpuWiYzd aaaHELLObbbbBeercccc
 
-aaa*dRaGoN*bbb*dRAGON*cccccc*Dragon*dddddd*DRAGON*eeeeee*DRAGON*ffff
+aaadRaGoNbbbdRAGONccccccDragonddddddDRAGONeeeeeeDRAGONffff
 
 ## output file ##
 
