@@ -3,6 +3,7 @@
 Extracts words of the English dictionary from a big text file.
 
 This script was created to answer a question on Rugatu
+
 http://www.rugatu.com/questions/12480/find-and-filter-words-in-random-text
 
 
@@ -16,14 +17,14 @@ NTWzd1Y4zMS6xydrhNC9kKub2CpXZCoc9 QoWyBDDKNtYNYx2xAsFgezAyvY7n5tUy 7zBD5spS8v5Wr
 
 As one might see there are some words in the 3th row "HouSe" and in the 4th row "FActorY" this is what I am looking for. Following reqirments :
 
-Scann entire text
-Filter1 all english dictionary words made out of uppercase and lowercase letters which are longer than 3 letters. Example: Don't filter eGg, sEx, ArM but bEef, Look, WaRm etc.
-Filter2 all english dictionary words made of only uppercase and lowercase letters which are longer than 3 letters. Example: Don't filter EGG, sex, ARM but BEEF, look, warm etc.
-Filter all english dictionary words start with an uppercase letter and the rest are lowercase letters which are longer than 3 letters. Example: Don't filter Egg, Sex, Arm but Beef, Look, Warm etc.
-Show all filtered results in a .txt file or in a excel sheet. Ideal "Filtered words 1" space "Filtered words 2" space "Filtered words 3".
-Must be able to filter millions of rows without problems.
-Solution should be simple and easy if possible in excel, html, VB.
-The process needs to be explained properly.
+ - Scann entire text
+ - Filter1 all english dictionary words made out of uppercase and lowercase letters which are longer than 3 letters. Example: Don't filter eGg, sEx, ArM but bEef, Look, WaRm etc.
+ - Filter2 all english dictionary words made of only uppercase and lowercase letters which are longer than 3 letters. Example: Don't filter EGG, sex, ARM but BEEF, look, warm etc.
+ - Filter all english dictionary words start with an uppercase letter and the rest are lowercase letters which are longer than 3 letters. Example: Don't filter Egg, Sex, Arm but Beef, Look, Warm etc.
+ - Show all filtered results in a .txt file or in a excel sheet. Ideal "Filtered words 1" space "Filtered words 2" space "Filtered words 3".
+ - Must be able to filter millions of rows without problems.
+ - Solution should be simple and easy if possible in excel, html, VB.
+ - The process needs to be explained properly.
 
 
 # Answer to the specs #
@@ -49,9 +50,7 @@ The words found are written in the output file exactly as they were in the input
 The output file contains, in that order :
 
  - the mixed-case words
-
  - the upper-case words
-
  - the title-case words
 
 There is no further sorting of the words. (no alphabetic, length, ...)
@@ -119,6 +118,7 @@ The input data must be a txt file, in the same directory as the script, and must
 Execute the command "python main.py"
 
 A window should open, showing some progress. Each progress information is given with this format :
+
 <current main step> / <total main step>  <quantity of work in current step>
 
 For example : 
@@ -144,6 +144,7 @@ The script creates 3 intermediate files, in the same directory, and fills them d
  - interm-title.txt contains all the title-case words already found. 
 
 Some duplicate words may appear in these files. 
+
 The final file "output.txt" contains all the words found, with no duplicates.
 
 You should not modify the intermediate files while the process is running.
@@ -159,8 +160,10 @@ I tested with an input file of 500 kilobytes, containing 50 000 rows of data. Th
 It is possible, by using py2exe. I made it and verify it works. The setup file and the "how-to" used to convert this script in a .exe are not present in this repository. But it's not so hard, and anyway, not so interesting.
 
 The installations used for the conversion are the following ones :
-  py2exe-0.6.9.win32-py2.5.exe
-  python-2.5.4.msi
+
+py2exe-0.6.9.win32-py2.5.exe
+
+python-2.5.4.msi
 
 (I choosed python 2.5, because the latter versions of py2exe needs a Visual Studio file : MSVC-whatever, which is not so easy to find.)
 
@@ -173,5 +176,7 @@ This repository does not contain a conception document, and does not describe ho
 # Credits #
 
 created by Réchèr. Licence CC-BY or Free Art License.
+
 https://github.com/darkrecher/WordFilter
+
 send me some bitcoins if you like my spirit and/or my body : 12wF4PWLeVAoaU1ozD1cnQprSiKr6dYW1G
