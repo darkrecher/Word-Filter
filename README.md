@@ -119,7 +119,7 @@ Execute the command "python main.py"
 
 A window should open, showing some progress. Each progress information is given with this format :
 
-<current main step> / <total main step>  <quantity of work in current step>
+-current main step- / -total main step-  -quantity of work in current step-
 
 For example : 
 2/5  348755
