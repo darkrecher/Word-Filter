@@ -155,6 +155,6 @@ This repository does not contain any conception document, nor does describe how 
 
 created by Réchèr. Licence CC-BY or Free Art License.
 
-https://github.com/darkrecher/WordFilter
+https://github.com/darkrecher/Word-Filter
 
 send me some bitcoins if you like my spirit and/or my body : 12wF4PWLeVAoaU1ozD1cnQprSiKr6dYW1G
