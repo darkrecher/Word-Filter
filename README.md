@@ -9,11 +9,19 @@ http://www.rugatu.com/questions/12480/find-and-filter-words-in-random-text
 
 # Specifications #
 
-The specs are described in the question created on Rugatu, by the user bitcoinfoundation. (http://www.rugatu.com/users/2785/bitcoinfoundation)
+These specs are a copy of the question created on Rugatu, by the user bitcoinfoundation. (http://www.rugatu.com/users/2785/bitcoinfoundation)
 
 I am trying to filter words out of random text. Here an example:
 
-NTWzd1Y4zMS6xydrhNC9kKub2CpXZCoc9 QoWyBDDKNtYNYx2xAsFgezAyvY7n5tUy 7zBD5spS8v5WruYbxgS3FaE5VukokLCj5 7Xaiq8MjG43di8v3wq2t5dwWzk5QBqDcL 71wo6gGX8uGWi7RGxJkmtfmVernSX41L3 HYyrdvrwbt4vj5HouSez6Fa3SyC11PBaz AHqt1AGMcZ8CFActorYzJxcxjaCpY BTrUVCssfihZEx1qmYw3K4owfFpuWiYzd CHkowJrmRHZb5afdvTtR4Hp9sYDvyjZiC
+NTWzd1Y4zMS6xydrhNC9kKub2CpXZCoc9 QoWyBDDKNtYNYx2xAsFgezAyvY7n5tUy 
+
+7zBD5spS8v5WruYbxgS3FaE5VukokLCj5 7Xaiq8MjG43di8v3wq2t5dwWzk5QBqDcL 
+
+71wo6gGX8uGWi7RGxJkmtfmVernSX41L3 HYyrdvrwbt4vj5HouSez6Fa3SyC11PBaz 
+
+AHqt1AGMcZ8CFActorYzJxcxjaCpY BTrUVCssfihZEx1qmYw3K4owfFpuWiYzd 
+
+CHkowJrmRHZb5afdvTtR4Hp9sYDvyjZiC
 
 As one might see there are some words in the 3th row "HouSe" and in the 4th row "FActorY" this is what I am looking for. Following reqirments :
 
@@ -71,17 +79,17 @@ When the reward for this question is taken (wether I am the winner or not), the 
 
 ## input file ##
 
-71wo6gGX8uGWi7RGxJkmtfmVernSX41L3 HYyrdvrwbt4vj5HouSez6Fa3SyC11PBaz
+`71wo6gGX8uGWi7RGxJkmtfmVernSX41L3 HYyrdvrwbt4vj5HouSez6Fa3SyC11PBaz
 
 AHqt1AGMcZ8CFActorYzJxcxjaCpY BTrUVCssfiHELLOqmYw3K4owfFpuWiYzd
 
 BTrUVCssfiqmYwBeer3K4owfFpuWiYzd aaaHELLObbbbBeercccc
 
-aaadRaGoNbbbdRAGONccccccDragonddddddDRAGONeeeeeeDRAGONffff
+aaadRaGoNbbbdRAGONccccccDragonddddddDRAGONeeeeeeDRAGONffff`
 
 ## output file ##
 
-HouSe
+`HouSe
 
 FActorY
 
@@ -95,37 +103,32 @@ DRAGON
 
 Beer
 
-Dragon
+Dragon`
 
 (note that HELLO and Beer appear only once in the output file, though they are present twice in the input file)
 
-(Some other words may appear in the output file, because the input data may contain other English words which I did not noticed.)
-
-
-# How to test it #
-
-Install python, and execute the command "python main.py"
-
-You should see a new file appears in the directory : "output.txt".
-
-The "input.txt" and "output.txt" contain the example data I described in my Rugatu answer. You can check their content.
+(Some other words may appear in the output file, because the input data may contain other English words I did not noticed.)
 
 
 # How to use it #
 
 The input data must be a txt file, in the same directory as the script, and must be named "input.txt". You must replace the example file "input.txt" that was bundled with the script.
 
-Execute the command "python main.py"
+Execute the command `python main.py`
 
 A window should open, showing some progress. Each progress information is given with this format :
 
 -current main step- / -total main step-  -quantity of work in current step-
 
-For example : 
-2/5  348755
+Example : 
+
+`2/5  348755
+
 2/5  345755
+
 2/5  343255
-......
+
+......`
 
 It means you are currently in the step 2, there is a total of 5 steps, and there is "343255" quantity of work left for that step 2. The quantity of work decreases. When it reaches 0, the process goes to the next step.
 
@@ -157,20 +160,12 @@ I tested with an input file of 500 kilobytes, containing 50 000 rows of data. Th
 
 # Converting to a .exe #
 
-It is possible, by using py2exe. I made it and verify it works. The setup file and the "how-to" used to convert this script in a .exe are not present in this repository. But it's not so hard, and anyway, not so interesting.
-
-The installations used for the conversion are the following ones :
-
-py2exe-0.6.9.win32-py2.5.exe
-
-python-2.5.4.msi
-
-(I choosed python 2.5, because the latter versions of py2exe needs a Visual Studio file : MSVC-whatever, which is not so easy to find.)
+It can be done, by using py2exe. Look at the code and docstring of the file `setup.py`, in this repository.
 
 
 # Conception #
 
-This repository does not contain a conception document, and does not describe how the code is structured. Explore it on your own, and sorry for the inconvenience !
+This repository does not contain any conception document, nor does describe how the code is structured. Sorry for the inconvenience. Explore it on your own ! 
 
 
 # Credits #
