@@ -13,15 +13,11 @@ These specs are a copy of the question created on Rugatu, by the user bitcoinfou
 
 I am trying to filter words out of random text. Here an example:
 
-NTWzd1Y4zMS6xydrhNC9kKub2CpXZCoc9 QoWyBDDKNtYNYx2xAsFgezAyvY7n5tUy 
-
-7zBD5spS8v5WruYbxgS3FaE5VukokLCj5 7Xaiq8MjG43di8v3wq2t5dwWzk5QBqDcL 
-
-71wo6gGX8uGWi7RGxJkmtfmVernSX41L3 HYyrdvrwbt4vj5HouSez6Fa3SyC11PBaz 
-
-AHqt1AGMcZ8CFActorYzJxcxjaCpY BTrUVCssfihZEx1qmYw3K4owfFpuWiYzd 
-
-CHkowJrmRHZb5afdvTtR4Hp9sYDvyjZiC
+    NTWzd1Y4zMS6xydrhNC9kKub2CpXZCoc9 QoWyBDDKNtYNYx2xAsFgezAyvY7n5tUy 
+    7zBD5spS8v5WruYbxgS3FaE5VukokLCj5 7Xaiq8MjG43di8v3wq2t5dwWzk5QBqDcL 
+    71wo6gGX8uGWi7RGxJkmtfmVernSX41L3 HYyrdvrwbt4vj5HouSez6Fa3SyC11PBaz 
+    AHqt1AGMcZ8CFActorYzJxcxjaCpY BTrUVCssfihZEx1qmYw3K4owfFpuWiYzd 
+    CHkowJrmRHZb5afdvTtR4Hp9sYDvyjZiC
 
 As one might see there are some words in the 3th row "HouSe" and in the 4th row "FActorY" this is what I am looking for. Following reqirments :
 
@@ -79,31 +75,21 @@ When the reward for this question is taken (wether I am the winner or not), the 
 
 ## input file ##
 
-`71wo6gGX8uGWi7RGxJkmtfmVernSX41L3 HYyrdvrwbt4vj5HouSez6Fa3SyC11PBaz
-
-AHqt1AGMcZ8CFActorYzJxcxjaCpY BTrUVCssfiHELLOqmYw3K4owfFpuWiYzd
-
-BTrUVCssfiqmYwBeer3K4owfFpuWiYzd aaaHELLObbbbBeercccc
-
-aaadRaGoNbbbdRAGONccccccDragonddddddDRAGONeeeeeeDRAGONffff`
+    71wo6gGX8uGWi7RGxJkmtfmVernSX41L3 HYyrdvrwbt4vj5HouSez6Fa3SyC11PBaz
+    AHqt1AGMcZ8CFActorYzJxcxjaCpY BTrUVCssfiHELLOqmYw3K4owfFpuWiYzd
+    BTrUVCssfiqmYwBeer3K4owfFpuWiYzd aaaHELLObbbbBeercccc
+    aaadRaGoNbbbdRAGONccccccDragonddddddDRAGONeeeeeeDRAGONffff
 
 ## output file ##
 
-`HouSe
-
-FActorY
-
-dRaGoN
-
-dRAGON
-
-HELLO
-
-DRAGON
-
-Beer
-
-Dragon`
+    HouSe
+    FActorY
+    dRaGoN
+    dRAGON
+    HELLO
+    DRAGON
+    Beer
+    Dragon
 
 (note that HELLO and Beer appear only once in the output file, though they are present twice in the input file)
 
@@ -122,13 +108,10 @@ A window should open, showing some progress. Each progress information is given 
 
 Example : 
 
-`2/5  348755
-
-2/5  345755
-
-2/5  343255
-
-......`
+    2/5  348755
+    2/5  345755
+    2/5  343255
+    ......
 
 It means you are currently in the step 2, there is a total of 5 steps, and there is "343255" quantity of work left for that step 2. The quantity of work decreases. When it reaches 0, the process goes to the next step.
 
