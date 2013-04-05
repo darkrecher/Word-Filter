@@ -1,4 +1,4 @@
-# Word Filter #
+ï»¿# Word Filter #
 
 Extracts words of the English dictionary from a big text file.
 
@@ -124,7 +124,7 @@ A file named "output.txt" is created in the same directory as the script. If the
 
 If the process crashes during execution (not supposed to happen, but we never know), you can still get a part of the work done, thanks to intermediate files.
 
-The script creates 3 intermediate files, in the same directory, and fills them during the reading of the input file.
+The script creates 3Â intermediate files, in the same directory, and fills them during the reading of the input file.
  - interm-mixed.txt contains all the mixed-case words already found.
  - interm-upper.txt contains all the upper-case words already found.
  - interm-title.txt contains all the title-case words already found. 
@@ -153,7 +153,7 @@ This repository does not contain any conception document, nor does describe how 
 
 # Credits #
 
-created by Réchèr. Licence CC-BY or Free Art License.
+created by RÃ©chÃ¨r. Licence CC-BY or Free Art License.
 
 https://github.com/darkrecher/Word-Filter
 

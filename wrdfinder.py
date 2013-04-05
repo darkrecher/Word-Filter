@@ -1,12 +1,12 @@
-# -*- coding: utf-8 -*-
+ï»¿# -*- coding: utf-8 -*-
 
 """
-created by Réchèr. Licence CC-BY or Free Art License.
+created by RÃ©chÃ¨r. Licence CC-BY or Free Art License.
 https://github.com/darkrecher/Word-Filter
 send me some bitcoins if you like my spirit and/or my body : 12wF4PWLeVAoaU1ozD1cnQprSiKr6dYW1G
 """
 
-from wrdstock import WordStocker    
+from wrdstock import WordStocker
     
 
 class WordFinder():
@@ -28,7 +28,7 @@ class WordFinder():
                 word_upped, 
                 pos_word_start+1)
             while pos_next_word != -1:
-                # TODO : crappy and not DRY code.
+                # TODOÂ : crappy and not DRY code.
                 pos_word_start = pos_next_word
                 pos_word_end = pos_next_word + len(word)
                 word_orig_case = fragment[pos_word_start:pos_word_end]
@@ -45,7 +45,7 @@ if __name__ == "__main__":
     ws_upcase.add_word("BEER")
     ws_upcase.add_word("DWARF")
     word_finder = WordFinder(ws_upcase)
-    # TODO : add the asserts
+    # TODOÂ :Â add the asserts
     print word_finder.find_all_words("pPpPBERkKkK")    
     print word_finder.find_all_words("pPpPbEeRkKkK")
     print word_finder.find_all_words("pPpPBeerkKkK")
