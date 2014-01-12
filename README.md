@@ -1,4 +1,4 @@
-﻿# Word Filter #
+# Word Filter #
 
 Extracts words of the English dictionary from a big text file.
 
@@ -70,6 +70,7 @@ The executable sends some information on the standard output, to tell the progre
 The executable is coded in python, and embeds the python interpretor. (I use the py2exe software to merge my code and the interpretor). It means the execution time will be "quite fast". Though I can not guarantee any time limit.
 
 When the reward for this question is taken (wether I am the winner or not), the code will be released in my github repository, under CC-BY license.
+
 
 # Example #
 
@@ -153,8 +154,12 @@ This repository does not contain any conception document, nor does describe how 
 
 # Credits #
 
-created by Réchèr. Licence CC-BY or Free Art License.
+Created by Réchèr. 
 
-https://github.com/darkrecher/Word-Filter
+Licence : CC-BY or Free Art License.
 
-send me some bitcoins if you like my spirit and/or my body : 12wF4PWLeVAoaU1ozD1cnQprSiKr6dYW1G
+Repository : https://github.com/darkrecher/Word-Filter
+
+My blog : http://recher.wordpress.com/
+
+My bitcoin adress : 12wF4PWLeVAoaU1ozD1cnQprSiKr6dYW1G
